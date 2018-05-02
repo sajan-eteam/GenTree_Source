@@ -1,0 +1,202 @@
+//var id = "";
+jQ(document).ready(function() {	
+	
+	jQ('img[menu="top"]').mouseover(function() {
+		if(jQ(this).attr('id') == 'main1') {
+			if(jQ('#div_main1').css('display') == 'block') {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg2.gif');	
+			}
+			else {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg1.gif');
+			}
+		}
+		else if(jQ(this).attr('id') == 'main2') {
+			if(jQ('#div_main2').css('display') == 'block') {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg22.gif');	
+			}
+			else {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg11.gif');
+			}
+		}
+		else if(jQ(this).attr('id') == 'main3') {
+			if(jQ('#div_main3').css('display') == 'block') {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg222.gif');	
+			}
+			else {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg111.gif');
+			}
+		}
+		else if(jQ(this).attr('id') == 'main33') { // in menu, for user type = 3, there is no category section
+			if(jQ('#div_main33').css('display') == 'block') {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg2222.gif');	
+			}
+			else {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg1111.gif');
+			}
+		}
+		else if(jQ(this).attr('id') == 'main4') {
+			if(jQ('#div_main4').css('display') == 'block') {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg2222.gif');	
+			}
+			else {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg1111.gif');
+			}
+		}
+		else if(jQ(this).attr('id') == 'main5') {
+			if(jQ('#div_main5').css('display') == 'block') {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg22222.gif');	
+			}
+			else {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg11111.gif');
+			}
+		}		
+	});
+	
+
+	jQ('img[menu="top"]').mouseout(function() {
+		if(jQ(this).attr('id') == 'main1') {					
+			if(jQ('#div_main1').css('display') == 'block') {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg00.gif');
+			}
+			else {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg0.gif');
+			}
+		}
+		else if(jQ(this).attr('id') == 'main2') {					
+			jQ(this).attr('src', '../includes/img/menu/menu_bg00.gif');					
+		}
+		else if(jQ(this).attr('id') == 'main3') {					
+			jQ(this).attr('src', '../includes/img/menu/menu_bg000.gif');					
+		}
+		else if(jQ(this).attr('id') == 'main33') {	// in menu, for user type = 3, there is no category section				
+			if(jQ('#div_main33').css('display') == 'block') {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg000.gif');
+			}
+			else {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg0000.gif');
+			}					
+		}
+		else if(jQ(this).attr('id') == 'main4') {					
+			if(jQ('#div_main4').css('display') == 'block') {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg000.gif');
+			}
+			else {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg0000.gif');
+			}
+		}
+		else if(jQ(this).attr('id') == 'main5') {					
+			if(jQ('#div_main5').css('display') == 'block') {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg00.gif');
+			}
+			else {
+				jQ(this).attr('src', '../includes/img/menu/menu_bg00000.gif');
+			}
+		}		
+	});
+	
+
+	jQ('#main1').click(function() {
+		id = jQ(this).attr('id');
+		if(id == 'main1') {			
+			if(jQ('#div_main1').css('display') == 'block') {
+				jQ('#div_main1').css('display', 'none');					
+				jQ('#anchor_main1').attr('class', 'pad');									
+				jQ(this).attr('src', '../includes/img/menu/menu_bg1.gif');				
+			}
+			else {
+				jQ("#div_main1").show("slow", function() { 					
+					jQ('#div_main1').css('display', 'block');						
+				}); 
+				jQ('#anchor_main1').attr('class', 'pad2');				
+				jQ(this).attr('src', '../includes/img/menu/menu_bg2.gif');							
+			}
+		}
+	});
+
+	jQ('#main2').click(function() {
+		id = jQ(this).attr('id');
+		if(id == 'main2') {			
+			if(jQ('#div_main2').css('display') == 'block') {
+				jQ('#div_main2').css('display', 'none');
+				jQ(this).attr('src', '../includes/img/menu/menu_bg11.gif');
+			}
+			else {
+				jQ("#div_main2").show("slow", function() {
+					jQ('#div_main2').css('display', 'block');
+				});
+				jQ(this).attr('src', '../includes/img/menu/menu_bg22.gif');				
+			}
+		}
+	});
+
+	jQ('#main3').click(function() {
+		id = jQ(this).attr('id');
+		if(id == 'main3') {			
+			if(jQ('#div_main3').css('display') == 'block') {
+				jQ('#div_main3').css('display', 'none');
+				jQ(this).attr('src', '../includes/img/menu/menu_bg111.gif');
+			}
+			else {
+				jQ("#div_main3").show("slow", function() {
+					jQ('#div_main3').css('display', 'block');
+				});
+				jQ(this).attr('src', '../includes/img/menu/menu_bg222.gif');				
+			}
+		}
+	});
+	
+	jQ('#main33').click(function() { // in menu, for user type = 3, there is no category section
+		id = jQ(this).attr('id');
+		if(id == 'main33') {			
+			if(jQ('#div_main33').css('display') == 'block') {
+				jQ('#div_main33').css('display', 'none');
+				jQ('#anchor_main33').attr('class', 'pad2 giu');
+				jQ(this).attr('src', '../includes/img/menu/menu_bg1111.gif');
+			}
+			else {
+				jQ("#div_main33").show("slow", function() {
+					jQ('#div_main33').css('display', 'block');
+				});
+				jQ('#anchor_main33').attr('class', 'pad2 noradius');
+				jQ(this).attr('src', '../includes/img/menu/menu_bg2222.gif');				
+			}
+		}
+	});
+
+	jQ('#main4').click(function() {
+		id = jQ(this).attr('id');
+		if(id == 'main4') {			
+			if(jQ('#div_main4').css('display') == 'block') {
+				jQ('#div_main4').css('display', 'none');
+				jQ('#anchor_main4').attr('class', 'pad2 giu');
+				jQ(this).attr('src', '../includes/img/menu/menu_bg1111.gif');
+			}
+			else {
+				jQ("#div_main4").show("slow", function() {
+					jQ('#div_main4').css('display', 'block');
+				});
+				jQ('#anchor_main4').attr('class', 'pad2 noradius');
+				jQ(this).attr('src', '../includes/img/menu/menu_bg2222.gif');				
+			}
+		}
+	});
+
+	jQ('#main5').click(function() {
+		id = jQ(this).attr('id');
+		if(id == 'main5') {			
+			if(jQ('#div_main5').css('display') == 'block') {
+				jQ('#div_main5').css('display', 'none');
+				jQ('#anchor_main5').attr('class', 'pad');
+				jQ(this).attr('src', '../includes/img/menu/menu_bg11111.gif');
+			}
+			else {
+				jQ("#div_main5").show("slow", function() {
+					jQ('#div_main5').css('display', 'block');
+				});
+				jQ('#anchor_main5').attr('class', 'pad2');
+				jQ(this).attr('src', '../includes/img/menu/menu_bg22222.gif');				
+			}
+		}
+	});
+
+});

@@ -1,0 +1,243 @@
+/*
+arancione #f18e00
+blu #48728a
+verde #669933
+*/
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+input[class*="span"], 
+select[class*="span"], 
+textarea,
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"],
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	/*border-radius: 4px 4px 4px 4px;*/
+    color: #555555;
+    display: inline-block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin:0 2px 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
+}
+input.span1 { width:120px;}
+input.span2 { width:180px;}
+input.span3 { width:250px;}
+input.span4 { width:330px;}
+input.span5 { width:450px;}
+
+select[class*="span"] {
+border: 1px solid #CCCCCC;
+color: #555555;
+padding: 4px 0 2px;
+display: inline-block;
+font-size: 14px;
+height: 30px;
+line-height: 20px;
+margin-bottom: 10px;
+}
+select option {
+border-bottom: 1px solid #CCCCCC;
+color: #48728A;
+margin: 0 5px;
+min-height: 20px;
+padding: 1px 0 0;
+}
+select.span1 { width:120px;}
+
+input[type="search"] {
+	border-radius: 12px 12px 12px 12px;
+	background:#fff url(../images/ico_lente.png) no-repeat 5px 5px;
+	padding-left:25px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+	color:#000;
+}
+
+img {
+    vertical-align: middle;
+	max-width:100%;
+}
+
+a { color:#48728a; text-decoration:none;}
+a:hover,
+a:focus { text-decoration: none; color:#F18E00;}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Fabio custom styles
+   ========================================================================== */
+
+/* ====MENU==== */
+.close_menu { display:block; position:absolute; top:0; left:0; width:100%; height:100%; z-index:3;
+background-color: rgba(255, 255, 255, 0.2);
+background: rgba(255, 255, 255, 0.2);
+color: rgba(255, 255, 255, 0.2);
+}
+.cont_menu { position:fixed; top:0; left:-400px; width:auto; overflow-y:auto; z-index:4; border-right:1px solid #717272;
+background-color: rgba(255, 255, 255, 0.9);
+background: rgba(255, 255, 255, 0.9);
+color: rgba(255, 255, 255, 0.9);
+-moz-box-shadow: 1px 1px 3px #b2afac;
+-webkit-box-shadow: 1px 1px 3px #b2afac;
+box-shadow: 1px 1px 3px #b2afac;
+
+}
+.cont_menu .menu div{ display:block; position:relative; padding:20px 75px 20px 55px; font:normal 14px "Times New Roman", Times, serif; text-decoration:none; color:#3e3e3e; border-bottom:1px solid #d7d7d6;}
+.cont_menu .menu .vedi{ background-color:#f5f2ec !important; color:#000;}
+.cont_menu .menu .tit{ height:60px; padding:0; background:#FFF url(../image/menu_testata.png) no-repeat center; background-size:200px 29px;}
+.cont_menu .menu .ico_benvenuto{ background:url(../image/menu_ico_benvenuto.png) no-repeat 15px 50%; background-size:25px 21px;}
+.cont_menu .menu .ico_generazione{ background:url(../image/menu_ico_generazione.png) no-repeat 15px 50%; background-size:25px 16px;}
+.cont_menu .menu .ico_albero{ background:url(../image/menu_ico_albero.png) no-repeat 15px 50%; background-size:25px 16px;}
+.cont_menu .menu .ico_ascendenti{ background:url(../image/menu_ico_ascendenti.png) no-repeat 18px 50%; background-size:16px 17px;}
+.cont_menu .menu .ico_libro{ background:url(../image/menu_ico_libro.png) no-repeat 20px 50%; background-size:15px 18px;}
+.cont_menu .menu .ico_album{ background:url(../image/menu_ico_album.png) no-repeat 18px 50%; background-size:20px 20px;}
+.cont_menu .menu .ico_album .ico{ position:absolute; width:57px; height:35px; top:12px; right:10px; background:url(../image/menu_ico_album2.png) no-repeat; background-size:57px 35px; padding:0; border:0;}
+.cont_menu .menu .ico_compleanni{ background:url(../image/menu_ico_compleanni.png) no-repeat 18px 50%; background-size:19px 20px;}
+.cont_menu .menu .ico_compleanni .ico{ position:absolute; width:48px; height:32px; top:12px; right:10px; background:url(../image/menu_ico_compleanni2.png) no-repeat; background-size:48px 32px; padding:0; border:0;}
+.cont_menu .menu .ico_profilo{ background:url(../image/menu_ico_profilo.png) no-repeat 18px 50%; background-size:17px 17px;}
+.cont_menu .menu .ico_impostazioni{ background:url(../image/menu_ico_impostazioni.png) no-repeat 18px 50%; background-size:17px 17px;}
+
+/* ====HEADER==== */
+.header { position:fixed; top:0; left:0; width:100%; height:60px; background-color:#FFF; border-bottom:1px solid #717272; z-index:3;
+-moz-box-shadow: 1px 1px 3px #d2d2d2;
+-webkit-box-shadow: 1px 1px 3px #d2d2d2;
+box-shadow: 1px 1px 3px #d2d2d2;
+}
+.header .int{ display:table; width:100%;}
+.header .int .cl1{ display:table-cell; width:20%; height:60px; vertical-align:middle;}
+.header .int .cl1 .cont{ display: block; padding:0 0 0 10px;}
+
+.ico_menu { float:left; border:2px solid #717272; padding:1px 7px; margin:0 9px 7px;}
+.ico_menu p{ width:20px; height:2px; background-color:#4a4a4a; margin:3px 0;}
+.ico_notifiche { float:left; margin:0 0 0 18px;}
+.notifiche_tendina { display:none; position:absolute; top:50px; left:48px; width:283px; height:240px; background:url(../image/tendina_notifiche.png) no-repeat; background-size:283px 240px;}
+
+.back { position:absolute; top:2px; left:20px; width:36px; height:36px; background:url(../image/ico_back.png) no-repeat; z-index:4;}
+
+.header .int .cl2{ display:table-cell; width:60%; height:60px; vertical-align:middle; text-align:center; font:normal 20px "Times New Roman", Times, serif;}
+.header .int .cl3{ display:table-cell; width:20%; height:60px; vertical-align:middle;}
+
+.contenitor { position:absolute; top:60px; left:0; width:100%; overflow:auto; background-color:#EAE6E3; z-index:1;}
+.contenitor .int{ display:block; position:relative;}
+
+/* Contenitore immagine albero */
+.contenitor .int .cont_img{ position:absolute; top:0; left:0; width:8000px; height:708px; overflow:hidden;}
+.contenitor .int .cont_img table{ position:relative;}
+.contenitor .int .cont_img img{ width:4000px; border:0;}
+
+/* Contenitore pagina Benvenuto */
+.cont_open_menu{ position:fixed; top:15px; left:10px;}
+.cont_open_menu .click_esteso{ position:absolute; width:100px; height:80px; top:-15px; left:-15px; z-index:1;}
+.contenitor_benvenuto { position:absolute; top:0; left:0; width:100%; height:100%; overflow:auto; background-color:#EAE6E3; z-index:1;}
+.contenitor_benvenuto .cont_img{ position:absolute; top:0; left:0; width:1024px; text-align:center; overflow:hidden;}
+.contenitor_benvenuto .cont_img .link{ position:absolute; bottom:55px; left:415px; width:220px; height:45px;}
+.contenitor_benvenuto .cont_img img{ width:1024px; border:0;}
+.contenitor_benvenuto2 .cont_img{ position:absolute; top:0; left:0; width:1024px; text-align:center; overflow:hidden;}
+.contenitor_benvenuto2 .cont_img .link{ position:absolute; bottom:55px; left:415px; width:220px; height:45px;}
+.contenitor_benvenuto2 .cont_img img{ width:1024px; border:0;}
+
+/* Contenitore immagine ascendenti */
+.contenitor_asce { position:absolute; top:60px; left:0; width:100%; overflow:auto; background-color:#EAE6E3; z-index:1;}
+.contenitor_asce .int{ display:block; position:relative;}
+.contenitor_asce .int .cont_img{ position:absolute; top:0; left:0; width:1722px; height:1719px; overflow:hidden;}
+.contenitor_asce .int .cont_img table{ position:relative;}
+.contenitor_asce .int .cont_img img{ width:1772px; border:0;}
+
+.albero_popup1 { position:absolute; top:100px; left:100px; width:100px; height:50px; background-color:#FF0; z-index:2;}
+
+/* Contenitore pagina Libro di famiglia */
+.libro_testata{ position:fixed; top:0; left:0; width:100%; height:40px; z-index:2;
+background-color: rgba(0, 0, 0, 0.75);
+background: rgba(0, 0, 0, 0.75);
+color: rgba(0, 0, 0, 0.75);
+}
+.libro_testata .cont_open_menu{ top:8px;}
+.libro_footer{ position:fixed; bottom:0; left:0; width:100%; height:40px; text-align:center; z-index:2;
+background-color: rgba(0, 0, 0, 0.75);
+background: rgba(0, 0, 0, 0.75);
+color: rgba(0, 0, 0, 0.75);
+}
+.libro_footer .mignature{ display:inline-block; width:25px; height:30px; background-color:#FFF; margin:5px;}
+.contenitor_libro .cont_img{ position:absolute; top:0; left:0; width:100%; text-align:center; overflow:hidden; background-color:#000;}
+.contenitor_libro .cont_img img{ border:0;}
+
+/* pagina Compleanni */
+.search { position:absolute; top:20px; right:20px; width:213px; height:27px; background:url(../image/search.jpg) no-repeat; background-size:213px 27px; z-index:2;}
+.search input{ width:213px; height:27px; padding:0; margin:0; border:none; background-color:transparent; color:trasparent;}
+.search.on { background:url(../image/search_on.jpg) no-repeat; background-size:213px 27px;}
+.search .tendina{ display:none; position:absolute; top:105%; left:0; width:213px; height:109px; background:url(../image/search_tendina.jpg) no-repeat; background-size:213px 109px;}
+.search2 { position:absolute; top:20px; right:20px; width:213px; height:27px; background:url(../image/search.jpg) no-repeat; background-size:213px 27px; z-index:2;}
+.search2.on { background:url(../image/search2_on.jpg) no-repeat; background-size:213px 27px;}
+.search2 .tendina{ display:none; position:absolute; top:105%; left:0; width:213px; height:76px; background:url(../image/search2_tendina.jpg) no-repeat; background-size:213px 70px;}
+.interruttore { position:absolute; top:75px; right:20px; width:92px; height:27px; background:url(../image/interruttore.jpg) no-repeat; z-index:1;}
+.interruttore2 { position:absolute; top:75px; right:20px; width:92px; height:27px; background:url(../image/interruttore2.jpg) no-repeat; z-index:1;}
+
+/* Link pagina Login */
+.link_login{ position:absolute; bottom:215px; left:445px; width:145px; height:45px;}
+.link_password{ position:absolute; bottom:280px; left:260px; width:180px; height:20px;}
+.link_richiesta_password{ position:absolute; bottom:90px; left:390px; width:430px; height:80px;}
+
+/* Link pagina impostazioni */
+.link_logout{ position:absolute; bottom:222px; left:432px; width:190px; height:55px;}
+.popup_album { position:absolute; width:100%; height:100%; text-align:center; vertical-align:middle; padding-top:40px; overflow:hidden; z-index:5; display:none;
+background-color: rgba(0, 0, 0, 0.8);
+background: rgba(0, 0, 0, 0.8);
+color: rgba(0, 0, 0, 0.8);
+}
+.popup_album img{ width:934px;}
+.open_popup_album { position:absolute; width:100px; height:100px; top:30px; left:315px; z-index:4;}
+
+/* Link pagina album */
+.link_album{ position:absolute; bottom:170px; left:443px; width:142px; height:137px;}
+
+/* Contenitore immagini di tutte le altre pagine */
+.contenitor .int .cont_img2{ position:absolute; top:0; left:0; width:1024px; text-align:center; overflow:hidden;}
+.ico_sx{ position:fixed; top:80px; left:25px; width:25px; height:25px; background:url(../image/ico_interrogativo.png) no-repeat; z-index:4;}
+.contenitor .int .cont_img2 img{ width:1024px; border:0;}
+
+
+

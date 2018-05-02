@@ -1,0 +1,82 @@
+#nav-menu-header, #nav-menus-frame, #wpbody, .menu li {
+	zoom:100%;
+}
+* html #adminmenu {
+	margin-left:-80px;
+}
+* html .folded #adminmenu {
+	margin-left:-22px;
+}
+* html #wpcontent #adminmenu li.menu-top {
+	display:inline;
+	padding:0;
+	margin:0;
+}
+* html #footer {
+	margin:0;
+}
+.folded #adminmenu li.menu-top {
+	display:block;
+	zoom:100%;
+}
+ul#adminmenu {
+	z-index:1;
+}
+#adminmenu li.menu-top a.menu-top {
+	min-width:auto;
+	width:auto;
+}
+#wpcontent #adminmenu li.wp-has-current-submenu a.wp-has-submenu {
+	font-style:normal;
+}
+* html #wpcontent #adminmenu .wp-menu-open .wp-menu-toggle {
+	background:none;
+}
+* html #wpcontent #adminmenu .wp-has-submenu .wp-menu-toggle {
+	background:url(../img/menu-bits.gif?ver=20100610) no-repeat scroll left -109px;
+}
+* html #wpcontent #adminmenu li.wp-has-current-submenu .wp-menu-toggle {
+	background:url(../img/menu-bits.gif?ver=20100610) no-repeat scroll left -206px;
+}
+* html #adminmenu div.wp-menu-image {
+	height:29px;
+}
+#wpcontent #adminmenu .wp-submenu li {
+	padding:0;
+}
+#adminmenu, .major-publishing-actions, .wp-submenu, .wp-submenu li, .wp-menu-toggle {
+	zoom:100%;
+}
+.folded #adminmenu li.wp-menu-separator {
+	width:28px;
+}
+#wpcontent #adminmenu .wp-submenu li.wp-submenu-head {
+	padding:3px 4px 4px 10px;
+	zoom:100%;
+}
+.folded #adminmenu .menu-top {
+	height:30px;
+}
+.folded #adminmenu .wp-submenu {
+	margin:-1px 0 0 0;
+}
+#adminmenu .wp-submenu a {
+	margin:0;
+	padding-left:12px;
+	border-width:0 1px 0px 1px;						/*border-width:0 1px 0 0;	  border-style:none solid none none;	*/			
+	border-style:none solid none solid;
+}
+
+
+/* Fabio 22-12-2010 */
+#adminmenu .wp-submenu li.current, #adminmenu .wp-submenu li.current a, #adminmenu .wp-submenu li.current a:hover {
+	margin-top:0;
+}
+#adminmenu .wp-submenu li {
+	padding:0;
+	margin-top:-4px;
+}
+#adminmenu li.wp-has-current-submenu ul {
+	border-bottom-width:2px;
+	border-bottom-style:solid;
+}

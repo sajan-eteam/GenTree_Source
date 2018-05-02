@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.table_main{margin-left:155px;}
+#tabella_head{ background-color:transparent; z-index:2;height:119px !important;position: absolute; min-width:825px;}
+#table_body p{font-size:12px;}
+
+#tabella_head.table_thumb_view .labels{ display:none;}
+
+#tabella_head.table_thumb_view .thumb_view{-webkit-box-shadow: inset 0 1px 5px rgba(67, 78, 84, .5);-moz-box-shadow: inset 0 1px 5px rgba(67, 78, 84, .5);box-shadow: inset 0 1px 5px rgba(67, 78, 84, .5);background: #888;border-color:#666;}
+
+#tabella_head.table_list_view .list_view{-webkit-box-shadow: inset 0 1px 5px rgba(67, 78, 84, .5);-moz-box-shadow: inset 0 1px 5px rgba(67, 78, 84, .5);box-shadow: inset 0 1px 5px rgba(67, 78, 84, .5);background: #888;border-color:#666;}
+#tabella_head.table_list_view .list_view span{background: url(../img/buttons/tabs.png) no-repeat 0px -20px;}
+#tabella_head.table_thumb_view .thumb_view span{background: url(../img/buttons/tabs.png) no-repeat -20px -20px;}
+#top_right{ background:#fff;}
+
+#list_view{-moz-border-radius: 4px 0 0 4px;-webkit-border-radius: 4px 0 0 4px;border-radius:4px 0 0 4px;margin: 0;height:30px;width:40px;text-align:center;}
+#list_view span{display:inline-block;width:18px;height:18px;background: url(../img/buttons/tabs.png) no-repeat 0px 0px;}
+
+.tab_active:hover{background: #888;border-color:#666;}
+
+#thumb_view {-moz-border-radius: 0 4px 4px 0;-webkit-border-radius: 0 4px 4px 0;border-radius:0 4px 4px 0;margin-left:-1px;height:30px;width:40px;text-align:center;}
+#thumb_view span{display:inline-block;width:18px;height:18px;background: url(../img/buttons/tabs.png) no-repeat -20px 0px;}
+
+.check{width:20px;text-align:center;}
+.last p{ border: none !important;}
+
+table.photo .col1{ width:50px;}
+table.photo .col2 div{width:100%;overflow:hidden;height:20px;float:right;}
+table.photo .col2 div a:hover{ text-decoration:none;}
+table.photo .col2{padding:0;}
+table.photo .col3{width: 150px;}
+table.photo .col4{width: 150px;}
+table.photo .filter{ background:#fff;}
+
+.table_thumb_view .preview{height:220px; overflow:hidden; float:left;margin:10px; cursor:pointer; position:relative;}
+.table_thumb_view .preview p.pubbl{ display:none}
+.table_thumb_view .preview p.date{display:none}
+.table_thumb_view .preview .check{ position:absolute; top:5px; left:5px; display:none;}
+.table_thumb_view .preview .thumb{width:180px; height:180px; padding:2px; display:table-cell; vertical-align:middle; border-radius:4px;}
+.table_thumb_view .preview .thumb img{ max-height:180px; max-width:180px;}
+.table_thumb_view .preview p { text-align:center; font-size:13px;}
+.table_thumb_view .preview:hover > .thumb .check{display:block;}
+.table_thumb_view .selection {position:absolute; width: 184px;height: 184px; z-index: -1; border-radius: 4px;}
+.table_thumb_view .preview.selected .check{ display:block;}
+.table_thumb_view .preview a{ text-decoration:none; color:#333;}
+
+.table_list_view .preview{border-bottom: 1px solid #dbdbdb;; display: table-cell;height: 45px; overflow:hidden; float:left; cursor:pointer; position:relative;}
+.table_list_view .preview div, .table_list_view .preview p{ display:inline-block;}
+.table_list_view .preview .check{margin-left: 10px;position: absolute;top: 12px; left:0;z-index: 1;}
+.table_list_view .preview .thumb{width:96px;padding-left: 45px; padding-top:5px;}
+.table_list_view .preview .thumb .img_bg{ width:35px; height:35px; display:table-cell; vertical-align:middle; background:#eee; margin:5px;margin-left: 10px;}
+.table_list_view .preview .thumb .img_bg img{ max-height:35px; max-width:35px;}
+.table_list_view .preview p {font-size:13px; background:#fff;}
+.table_list_view .preview:hover > p{background:#eee;}
+.table_list_view .preview:hover > div p{background:#eee;}
+.table_list_view .preview p.pubbl{position: absolute;top: 15px;right: 0px;width: 150px;}
+.table_list_view .preview p.date{position: absolute;top: 15px;right: 160px;width: 150px; padding-left:10px;}
+.table_list_view .preview a{ text-decoration:none; color:#333;}
+.table_list_view .preview .name{ position:absolute; width:inherit; overflow:hidden; left:0; top:15px;}
+.table_list_view .preview .name p{ padding-left:100px; background: transparent !important;}
+.table_list_view .selection {position:absolute; width:inherit; height:inherit; z-index: -1;}
+
+.table_list_view .preview.selected .selection, .table_thumb_view .preview.selected .selection, .table_list_view .preview.selected p{background:#eee;}
+
+.preview:hover > .selection{background:#eee;}
+
+button .delete{background:url(../img/buttons/icons.gif) no-repeat 0 -17px; display:inline-block; height:15px; width:10px; margin-top: 1px;}

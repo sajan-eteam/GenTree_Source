@@ -1,0 +1,150 @@
+/*
+
+Darko Bunic
+http://www.redips.net/
+Nov, 2009.
+
+*/
+
+body{
+}
+
+
+/* add bottom margin between tables */
+#table1,
+#table2{
+    vertical-align:	middle;
+}
+
+
+/* drag container */
+#drag{
+    vertical-align:	middle;
+}
+
+
+/* drag objects (DIV inside table cells) */
+.drag{
+	position: relative;
+	cursor: move;
+	margin: 0px;
+	z-index: 10;
+	background-color: none;
+	text-align: left;
+	font-size: 14px; /* needed for cloned object */
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	/* without width, IE6/7 will not apply filter/opacity to the element ?! */
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.drag_new{
+	position: relative;
+	cursor: move;
+	margin: 0px;
+	z-index: 10;
+	background-color: none;
+	text-align: left;
+	font-size: 14px; /* needed for cloned object */
+	/*opacity: 0.7;
+	filter: alpha(opacity=70);*/
+	/* without width, IE6/7 will not apply filter/opacity to the element ?! */
+	width: 95%;
+	height: 100%;
+	vertical-align: middle;
+	padding:10px;
+	color:#000;
+	float:left;
+}
+
+.drag_new2{
+	position: relative;
+	cursor: move;
+	/*z-index: 10;*/
+	background-color: none;
+	font-size: 12px; /* needed for cloned object */
+	/*opacity: 0.7;
+	filter: alpha(opacity=70);*/
+	/* without width, IE6/7 will not apply filter/opacity to the element ?! */
+	width: 315px;
+	vertical-align: top;
+	/*margin-left:25px;*/
+	color:#000;
+}
+
+
+/* drag objects border for the first table */
+.t1 {
+	border: 0px solid #f1f0f0;
+    vertical-align:	middle;
+}
+/* drag object border for the second table */
+.t2 {
+	border: 0px solid #f1f0f0;
+    vertical-align:	middle;
+}
+/* cloned objects - third table */
+.t3 {
+	border: 0px solid #f1f0f0;
+    vertical-align:	middle;
+}
+/* allow / deny access to cells marked with 'mark' class name */
+.mark{
+    vertical-align:	middle;
+}
+.mark.sfondo{
+    background-color:#d9d8d8;
+}
+.cl_sfondo{
+    background-color:#d9d8d8;
+}
+/* trash cell */
+.trash{
+}
+
+/* tables */
+div#drag table{
+    vertical-align:	middle;
+}
+
+
+/* needed for IE6 because cursor "move" shown on radio button and checckbox ?! */
+div#drag input{
+    vertical-align:	middle;
+	cursor: auto;
+}
+
+
+/* table cells */
+div#drag td{
+    vertical-align:	middle;
+}
+
+
+/* "Click" button */
+.button{
+    vertical-align:	middle;
+}
+
+
+/* toggle checkboxes at the bottom */
+.checkbox{
+    vertical-align:	middle;
+}
+
+
+/* button message */
+.message_line{
+    vertical-align:	middle;
+}
+
+/* append here cloned object before land to some table cell */
+#obj_new{
+    vertical-align:	middle;
+}
+
+.clone {
+    vertical-align:	middle;
+}

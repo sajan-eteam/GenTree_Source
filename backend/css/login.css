@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+body{margin:0;font-family:Arial, Helvetica, sans-serif;}
+
+#container{width:100%;background:#eee;}
+#box{background:#fff; border-radius:10px; border:1px solid #bbb; padding:20px; text-align:center;}
+#box p{text-align:left; font-size:11px;}
+#box p a{text-decoration:none; color:#C60}
+#box p a:hover{ text-decoration:underline;}
+.login_box{ width:400px; height:300px;}
+.companies_box{ width:320px; height:280px; text-align:left !important;}
+#header{background:#005793 !important; }
+
+#message{ position:absolute; top:-10px; width:inherit; padding:8px 0; font-size:12px; cursor:pointer;}
+#message.error{background: #e8bcb7;border: 1px solid #a51300;}
+
+input{height:20px; width:380px; padding:8px; margin:auto; margin-top:10px;border:solid 1px #ccc;font-size:13px; color:#999;}
+input.error{border:solid 1px #FF0000;}
+
+button{ 
+	font-family:Arial, Helvetica, sans-serif;
+	width: inherit;
+	font-size: 14px;
+	padding:8px 0;
+	margin-top:40px;
+	background-color: #efeeee;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#f7f7f7),to(#ddd));
+	background-image: -webkit-linear-gradient(top,#f7f7f7,#ddd);
+	background-image: -moz-linear-gradient(top,#f7f7f7,#ddd);
+	background-image: -ms-linear-gradient(top,#f7f7f7,#ddd);
+	background-image: -o-linear-gradient(top,#f7f7f7,#ddd);
+	background-image: linear-gradient(top,#f7f7f7,#ddd);
+	border: 1px solid #cfcfcf;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+	cursor: hand;
+}
+button:hover{
+	background-color: #efeeee;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#efeeee),to(#ccc));
+	background-image: -webkit-linear-gradient(top,#efeeee,#ccc);
+	background-image: -moz-linear-gradient(top,#efeeee,#ccc);
+	background-image: -ms-linear-gradient(top,#efeeee,#ccc);
+	background-image: -o-linear-gradient(top,#efeeee,#ccc);
+	background-image: linear-gradient(top,#efeeee,#ccc);
+}
+
+.list_title{ padding:10px; background:#b8c3c8; color:#fff; }
+.list_content a{display:block;padding:10px; color:#000; text-decoration:none; }
+.list_content div { border-bottom: solid 1px #b8c3c8; background: url(../img/arrow.gif) no-repeat right;}
+.list_content div:hover{ background:#E9EEF0 url(../img/arrow.gif) no-repeat right; cursor:pointer; }
